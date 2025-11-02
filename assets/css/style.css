@@ -1,0 +1,429 @@
+/* ===================================== */
+/* TEMA PRINCIPAL: CINZA ESCURO + VERDE PISCINA */
+/* ===================================== */
+
+:root {
+  --cor-primaria: #00c9a7; /* verde piscina */
+  --cor-secundaria: #1e1e1e; /* cinza escuro */
+  --cor-clara: #f5f7f8;
+  --cor-texto: #333;
+  --cor-branca: #fff;
+  --radius: 10px;
+}
+
+/* ----- RESET BÁSICO ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--cor-clara);
+  color: var(--cor-texto);
+  line-height: 1.5;
+}
+
+/* ===================================== */
+/* CABEÇALHO GERAL */
+/* ===================================== */
+
+header {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-branca);
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: var(--cor-branca);
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+nav a:hover,
+nav a.ativo {
+  color: var(--cor-primaria);
+}
+
+/* ===================================== */
+/* CONTEÚDO PRINCIPAL GERAL */
+/* ===================================== */
+
+main {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 50px 60px;
+  background-color: var(--cor-branca);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+main h2 {
+  color: var(--cor-secundaria);
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+  border-bottom: 2px solid var(--cor-primaria);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* ===================================== */
+/* PÁGINA INICIAL (HOME) */
+/* ===================================== */
+
+.home {
+  text-align: center;
+}
+
+.apresentacao {
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+}
+
+.apresentacao h2 {
+  color: var(--cor-primaria);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.atalhos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+.card-atalho {
+  flex: 1 1 250px;
+  background-color: var(--cor-branca);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 25px;
+  transition: 0.3s ease;
+}
+
+.card-atalho:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.card-atalho h3 {
+  color: var(--cor-secundaria);
+}
+
+.botao-atalho {
+  display: inline-block;
+  background-color: var(--cor-primaria);
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  margin-top: 15px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.botao-atalho:hover {
+  background-color: #00b196;
+}
+
+/* PAINEL HOME */
+.painel-home {
+  text-align: center;
+}
+
+.resumo-home {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.resumo-home p {
+  flex: 1 1 200px;
+  background-color: var(--cor-clara);
+  padding: 20px;
+  border-radius: var(--radius);
+  font-weight: 500;
+  color: var(--cor-secundaria);
+}
+
+.botao-painel {
+  background-color: var(--cor-primaria);
+  color: white;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: var(--radius);
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.botao-painel:hover {
+  background-color: #00b196;
+}
+
+/* ===================================== */
+/* FORMULÁRIOS GERAIS */
+/* ===================================== */
+
+form {
+  margin-top: 20px;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: var(--cor-secundaria);
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  background-color: #f9fafb;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: var(--cor-primaria);
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 201, 167, 0.3);
+}
+
+form button {
+  background-color: var(--cor-primaria);
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+  margin-top: 25px;
+  width: 100%;
+}
+
+form button:hover {
+  background-color: #00b196;
+}
+
+/* ===================================== */
+/* FIELDSET E LEGEND (AGRUPAMENTO LÓGICO) */
+/* ===================================== */
+
+fieldset {
+  border: none;
+  background-color: var(--cor-branca);
+  border-radius: var(--radius);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  padding: 25px 30px;
+  margin-bottom: 25px;
+}
+
+legend {
+  font-weight: 700;
+  color: var(--cor-primaria);
+  margin-bottom: 10px;
+  padding: 0 5px;
+  border-left: 4px solid var(--cor-primaria);
+  padding-left: 8px;
+}
+
+.cadastro form input,
+.cadastro form textarea,
+.cadastro form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  background-color: #f9fafb;
+  transition: 0.2s;
+}
+
+.cadastro form input:focus,
+.cadastro form textarea:focus,
+.cadastro form select:focus {
+  border-color: var(--cor-primaria);
+  box-shadow: 0 0 5px rgba(0, 201, 167, 0.3);
+  outline: none;
+}
+
+/* ===================================== */
+/* PÁGINA INSTITUCIONAL */
+/* ===================================== */
+
+.institucional {
+  text-align: center;
+}
+
+.mvv-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.mvv-card {
+  background-color: white;
+  border-radius: var(--radius);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  flex: 1 1 300px;
+  padding: 30px;
+  text-align: left;
+  border-top: 4px solid var(--cor-primaria);
+  transition: 0.3s ease;
+}
+
+.mvv-card:hover {
+  transform: translateY(-5px);
+}
+
+.mvv-card h3 {
+  color: var(--cor-primaria);
+  margin-bottom: 10px;
+}
+
+.historia {
+  background-color: #f9fafb;
+  border-radius: var(--radius);
+  padding: 40px;
+  margin-top: 60px;
+  text-align: justify;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  line-height: 1.6;
+}
+
+.equipe {
+  margin-top: 60px;
+}
+
+.equipe-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 35px;
+}
+
+.membro {
+  background-color: white;
+  border-radius: var(--radius);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  width: 240px;
+  padding: 20px;
+  transition: 0.2s;
+  text-align: center;
+}
+
+.membro:hover {
+  transform: translateY(-5px);
+}
+
+.membro img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.membro h3 {
+  color: var(--cor-secundaria);
+  margin-bottom: 5px;
+}
+
+.cta {
+  margin-top: 80px;
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 50px 30px;
+  border-radius: var(--radius);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta a {
+  display: inline-block;
+  background-color: white;
+  color: var(--cor-primaria);
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: var(--radius);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cta a:hover {
+  background-color: var(--cor-clara);
+}
+
+/* ===================================== */
+/* RODAPÉ */
+/* ===================================== */
+
+footer {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-branca);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 4px solid var(--cor-primaria);
+}
+
+/* ===================================== */
+/* RESPONSIVIDADE */
+/* ===================================== */
+
+@media (max-width: 768px) {
+  main {
+    padding: 30px 25px;
+    margin: 30px 10px;
+  }
+
+  .atalhos {
+    flex-direction: column;
+  }
+
+  .resumo-home {
+    flex-direction: column;
+  }
+
+  .mvv-container {
+    flex-direction: column;
+  }
+
+  .equipe-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .foto-galeria {
+    width: 80%;
+  }
+}
