@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Seja Voluntário - Plataforma de ONGs</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="description" content="Plataforma acadêmica que conecta ONGs, doadores e voluntários." />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
-  <!-- CABEÇALHO -->
   <header>
-    <h1>🌍 Plataforma de ONGs</h1>
+    <h1>Plataforma de ONGs</h1>
     <nav>
-      <a href="index.html" class="ativo">Início</a>
+      <a href="index.html">Início</a>
       <a href="cadastro.html">Cadastrar ONG</a>
       <a href="ongs.html">Ver ONGs</a>
       <a href="institucional.html">Institucional</a>
@@ -20,24 +20,22 @@
     </nav>
   </header>
 
-  <!-- CONTEÚDO PRINCIPAL -->
   <main class="voluntarios">
-
-    <section class="form-voluntario">
-      <h2>Seja um Voluntário!</h2>
-      <p>Preencha o formulário abaixo e participe de projetos sociais em sua região.</p>
+    <section class="form-voluntario card">
+      <h2>Seja um Voluntário</h2>
+      <p>Preencha o formulário abaixo para participar de projetos sociais.</p>
 
       <form id="formVoluntario">
-        <label for="nomeVoluntario">Nome completo:</label>
-        <input type="text" id="nomeVoluntario" required>
+        <label for="nomeVoluntario">Nome completo</label>
+        <input type="text" id="nomeVoluntario" required />
 
-        <label for="emailVoluntario">E-mail:</label>
-        <input type="email" id="emailVoluntario" required>
+        <label for="emailVoluntario">E-mail</label>
+        <input type="email" id="emailVoluntario" required />
 
-        <label for="telefoneVoluntario">Telefone:</label>
-        <input type="tel" id="telefoneVoluntario" placeholder="(00) 00000-0000">
+        <label for="telefoneVoluntario">Telefone</label>
+        <input type="tel" id="telefoneVoluntario" placeholder="(00) 00000-0000" />
 
-        <label for="interesse">Área de interesse:</label>
+        <label for="interesse">Área de interesse</label>
         <select id="interesse" required>
           <option value="">Selecione...</option>
           <option value="Educação">Educação</option>
@@ -50,19 +48,16 @@
         <label for="mensagemVoluntario">Por que quer ser voluntário?</label>
         <textarea id="mensagemVoluntario" rows="4" required></textarea>
 
-        <button type="submit">Enviar inscrição</button>
+        <button type="submit" class="botao">Enviar inscrição</button>
       </form>
 
-      <p id="msgVoluntario"></p>
+      <p id="msgVoluntario" class="mensagem"></p>
     </section>
-
   </main>
 
-  <!-- RODAPÉ -->
   <footer>
     <p>© 2025 - Plataforma de ONGs | Desenvolvido para fins acadêmicos por João Mateus A. P. Jr</p>
   </footer>
-
   <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Doar para ONG - Plataforma de ONGs</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="description" content="Plataforma acadêmica que conecta ONGs, doadores e voluntários." />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
   <header>
-    <h1>🌍 Plataforma de ONGs</h1>
+    <h1>Plataforma de ONGs</h1>
     <nav>
-      <a href="index.html" class="ativo">Início</a>
+      <a href="index.html">Início</a>
       <a href="cadastro.html">Cadastrar ONG</a>
       <a href="ongs.html">Ver ONGs</a>
       <a href="institucional.html">Institucional</a>
@@ -20,28 +21,29 @@
   </header>
 
   <main>
-    <section class="doacao">
+    <section class="doacao card">
       <h2>Doação</h2>
-      <div id="dadosOng"></div>
 
       <form id="formDoacao">
-        <label for="valor">Valor da Doação (R$):</label>
-        <input type="number" id="valor" min="1" required>
+        <label for="ongSelect">Selecione a ONG</label>
+        <select id="ongSelect" required></select>
 
-        <label for="nomeDoador">Seu nome:</label>
-        <input type="text" id="nomeDoador" required placeholder="Ex: Maria Silva">
+        <label for="valor">Valor da Doação (R$)</label>
+        <input type="number" id="valor" min="1" required />
 
-        <button type="submit">Confirmar Doação</button>
+        <label for="nomeDoador">Seu nome</label>
+        <input type="text" id="nomeDoador" placeholder="Opcional" />
+
+        <button type="submit" class="botao">Confirmar Doação</button>
       </form>
 
-      <p id="msgDoacao"></p>
+      <p id="msgDoacao" class="mensagem"></p>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 – Plataforma de ONGs | Desenvolvido para fins acadêmicos por João Mateus A. P. Jr</p>
+    <p>© 2025 - Plataforma de ONGs | Desenvolvido para fins acadêmicos por João Mateus A. P. Jr</p>
   </footer>
-
   <script src="assets/js/script.js"></script>
 </body>
 </html>
