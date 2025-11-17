@@ -1,0 +1,115 @@
+/* layout/navbar.css */
+
+/* barra principal */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+  position: relative;
+}
+
+/* links principais */
+nav a {
+  color: var(--branco);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: var(--font-sm);
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  transition: background .3s ease, color .3s ease;
+}
+
+nav a:hover,
+nav a.ativo {
+  color: var(--cor-primaria-500);
+  background: rgba(255,255,255,.06);
+}
+
+/* estrutura para dropdown */
+.nav-item {
+  position: relative;
+}
+
+.nav-dropdown-toggle::after {
+  content: " ▾";
+  font-size: 0.8em;
+}
+
+/* submenu */
+.nav-submenu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background: var(--branco);
+  color: var(--cor-texto);
+  min-width: 180px;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-1) 0;
+  display: none;
+  z-index: 200;
+}
+
+.nav-submenu a {
+  display: block;
+  padding: 8px 16px;
+  color: var(--cor-texto);
+}
+.nav-submenu a:hover {
+  background: var(--cor-neutra-100);
+}
+
+/* exibir dropdown no hover (desktop) */
+.nav-item:hover .nav-submenu {
+  display: block;
+}
+
+/* Ícone de menu mobile (hambúrguer) */
+.nav-toggle {
+  display: none;
+  cursor: pointer;
+  margin-left: auto;
+  font-size: 1.4rem;
+}
+
+/* menu colapsado no mobile */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: var(--cor-secundaria-500);
+    padding: var(--space-2);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+
+  .nav-links.aberto {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+    color: var(--branco);
+  }
+
+  /* submenu no mobile se comporta como lista comum */
+  .nav-item:hover .nav-submenu {
+    display: none;
+  }
+
+  .nav-item .nav-submenu {
+    position: static;
+    box-shadow: none;
+    background: transparent;
+  }
+}

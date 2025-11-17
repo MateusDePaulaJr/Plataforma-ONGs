@@ -1,0 +1,64 @@
+/* components/feedback.css */
+
+.alert {
+  padding: var(--space-2);
+  border-radius: var(--radius-sm);
+  margin-top: var(--space-2);
+  font-size: var(--font-sm);
+}
+
+.alert-sucesso {
+  background: rgba(22,163,74,.08);
+  color: var(--cor-sucesso);
+  border: 1px solid var(--cor-sucesso);
+}
+
+.alert-erro {
+  background: rgba(220,38,38,.08);
+  color: var(--cor-erro);
+  border: 1px solid var(--cor-erro);
+}
+
+.alert-aviso {
+  background: rgba(245,158,11,.08);
+  color: var(--cor-aviso);
+  border: 1px solid var(--cor-aviso);
+}
+
+/* Toast simples */
+.toast {
+  position: fixed;
+  bottom: var(--space-2);
+  right: var(--space-2);
+  background: var(--cor-secundaria-500);
+  color: var(--branco);
+  padding: 12px 18px;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+  font-size: var(--font-sm);
+  z-index: 300;
+}
+
+/* Modal genérico */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 250;
+}
+
+.modal-backdrop.ativo {
+  display: flex;
+}
+
+.modal {
+  background: var(--branco);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  max-width: 480px;
+  width: 100%;
+  padding: var(--space-3);
+}

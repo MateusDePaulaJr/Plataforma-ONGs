@@ -1,0 +1,30 @@
+/* =========================================
+   VOLUNTÁRIOS
+   ========================================= */
+
+.voluntarios {
+  display: flex;
+  justify-content: center;
+}
+
+.form-voluntario {
+  width: 100%;
+  max-width: 520px;
+}
+
+.form-voluntario h2 {
+  text-align: center;
+  margin-bottom: var(--space-2);
+}
+
+#mgsVoluntario {
+  text-align: center;
+  margin-top: var(--space-2);
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .form-voluntario {
+    padding: var(--space-2);
+  }
+}

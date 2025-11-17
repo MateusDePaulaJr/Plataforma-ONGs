@@ -1,0 +1,31 @@
+/* components/badges.css */
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: var(--font-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.badge-primaria {
+  background: var(--cor-primaria-500);
+  color: var(--branco);
+}
+
+.badge-secundaria {
+  background: var(--cor-secundaria-500);
+  color: var(--branco);
+}
+
+.badge-sucesso {
+  background: rgba(22,163,74,.15);
+  color: var(--cor-sucesso);
+}
+
+.badge-erro {
+  background: rgba(220,38,38,.15);
+  color: var(--cor-erro);
+}

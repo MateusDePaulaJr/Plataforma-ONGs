@@ -1,0 +1,39 @@
+/* =========================================
+   DETALHES DA ONG
+   ========================================= */
+
+.detalhe {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.detalhe h2 {
+  text-align: center;
+  margin-bottom: var(--space-3);
+}
+
+#detalheContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.detalhe-card {
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  background: var(--branco);
+  box-shadow: var(--shadow-sm);
+}
+
+.detalhe-card strong {
+  font-size: var(--font-lg);
+  color: var(--cor-primaria-500);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .detalhe {
+    padding: var(--space-1);
+  }
+}

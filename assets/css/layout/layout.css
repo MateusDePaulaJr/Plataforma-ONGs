@@ -1,0 +1,18 @@
+/* layout/layout.css */
+
+header {
+  background: var(--cor-secundaria-500);
+  color: var(--branco);
+  padding: 18px 16px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 3px 10px rgba(0,0,0,.2);
+}
+
+header h1 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+  letter-spacing: .5px;
+}

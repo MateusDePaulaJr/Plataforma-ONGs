@@ -1,0 +1,43 @@
+/* =========================================
+   ADMINISTRADOR
+   ========================================= */
+
+.admin {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.admin h2 {
+  text-align: center;
+  margin-bottom: var(--space-3);
+}
+
+.resumo-admin {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.resumo-admin p {
+  background: #f2f7f7;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  min-width: 200px;
+  text-align: center;
+}
+
+.lista-simples {
+  background: var(--cor-neutra-50);
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-3);
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .admin {
+    padding: var(--space-2);
+  }
+}

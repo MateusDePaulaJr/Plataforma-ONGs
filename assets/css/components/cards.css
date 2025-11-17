@@ -1,0 +1,68 @@
+/* components/cards.css */
+
+.card {
+  background: var(--branco);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-3);
+  margin-bottom: var(--space-3);
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* cards de ONG (já existiam) */
+.card-ong {
+  text-align: center;
+  padding: var(--space-3);
+  border-radius: var(--radius-lg);
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+  transition: all .3s ease;
+  width: 100%;
+  max-width: 320px;
+}
+.card-ong:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+.foto-ong {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto var(--space-2);
+  transition: transform .3s ease;
+}
+.card-ong:hover .foto-ong {
+  transform: scale(1.05);
+}
+
+/* grids existentes */
+#listaOngs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-2);
+  justify-items: center;
+}
+
+/* Resumos (home/admin) */
+.painel-home .resumo-home,
+.resumo-admin {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-2) 0;
+  justify-content: center;
+}
+.painel-home .resumo-home p,
+.resumo-admin p {
+  flex: 1 1 200px;
+  background: #f2f7f7;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  text-align: center;
+}

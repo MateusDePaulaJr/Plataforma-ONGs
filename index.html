@@ -10,15 +10,32 @@
 <body>
 
   <header>
-    <h1>Plataforma de ONGs</h1>
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="cadastro.html">Cadastrar ONG</a>
-      <a href="ongs.html">Ver ONGs</a>
-      <a href="institucional.html">Institucional</a>
-      <a href="voluntarios.html">Voluntariado</a>
-    </nav>
-  </header>
+  <h1>Plataforma de ONGs</h1>
+
+  <!-- Botão do menu mobile -->
+  <div class="nav-toggle">☰</div>
+
+  <!-- Links do menu -->
+  <nav class="nav-links">
+
+    <a href="index.html">Início</a>
+
+    <div class="nav-item">
+      <a href="ongs.html" class="nav-dropdown-toggle">ONGs</a>
+
+      <!-- Submenu -->
+      <div class="nav-submenu">
+        <a href="ongs.html">Ver ONGs</a>
+        <a href="cadastro.html">Cadastrar ONG</a>
+      </div>
+    </div>
+
+    <a href="institucional.html">Institucional</a>
+    <a href="voluntarios.html">Voluntariado</a>
+
+  </nav>
+</header>
+
 
   <main class="home">
     <section class="apresentacao card">

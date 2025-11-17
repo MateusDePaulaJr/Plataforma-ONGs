@@ -1,0 +1,17 @@
+/* =========================================
+   LISTA DE ONGS
+   ========================================= */
+
+.lista-ongs {
+  padding: var(--space-3);
+}
+
+.lista-ongs h2 {
+  text-align: center;
+  margin-bottom: var(--space-3);
+}
+
+/* O grid principal já vem dos cards */
+#listaOngs {
+  margin-top: var(--space-2);
+}

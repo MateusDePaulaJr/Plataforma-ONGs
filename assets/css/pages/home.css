@@ -1,0 +1,57 @@
+/* =========================================
+   HOME (index.html)
+   ========================================= */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+/* Seção de apresentação */
+.apresentacao {
+  text-align: center;
+  padding: var(--space-4);
+}
+
+/* Atalhos */
+.atalhos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-3);
+}
+
+.atalho {
+  flex: 1 1 220px;
+  min-width: 260px;
+  text-align: center;
+}
+
+/* Painel Resumo */
+.painel-home {
+  text-align: center;
+}
+
+.resumo-home {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  justify-content: center;
+  margin-bottom: var(--space-2);
+}
+
+.resumo-home p {
+  background: #f2f7f7;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  min-width: 180px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .atalhos {
+    flex-direction: column;
+    align-items: center;
+  }
+}

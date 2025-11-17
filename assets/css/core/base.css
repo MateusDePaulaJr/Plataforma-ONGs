@@ -1,0 +1,62 @@
+/* core/base.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--cor-neutra-100);
+  color: var(--cor-texto);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* Layout padrão de página */
+main {
+  max-width: 1000px;
+  margin: var(--space-5) auto;
+  padding: var(--space-4) var(--space-5);
+  background: var(--branco);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  transition: all .3s ease;
+}
+
+main h2 {
+  color: var(--cor-neutra-900);
+  margin-bottom: var(--space-1);
+  border-bottom: 2px solid var(--cor-primaria-500);
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+/* Tipografia básica */
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+p {
+  font-size: var(--font-md);
+  margin-bottom: var(--space-1);
+}
+
+/* Links genéricos */
+a {
+  color: var(--cor-primaria-500);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer (era no fim do seu CSS) */
+footer {
+  background: var(--cor-secundaria-500);
+  color: var(--branco);
+  text-align: center;
+  padding: 18px;
+  margin-top: var(--space-4);
+  border-top: 4px solid var(--cor-primaria-500);
+}

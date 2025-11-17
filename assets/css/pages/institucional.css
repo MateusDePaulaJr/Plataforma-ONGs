@@ -1,0 +1,196 @@
+/* =========================================
+   PÁGINA INSTITUCIONAL
+   Estilização exclusiva para institucional.html
+   ========================================= */
+
+/* ----- Seção principal ----- */
+.institucional {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+/* ============================
+      BLOCO: Missão, Visão, Valores
+   ============================ */
+
+.mvv {
+  padding: var(--space-3);
+}
+
+.mvv h2 {
+  margin-bottom: var(--space-3);
+}
+
+/* container dos 3 cards (Missão, Visão, Valores) */
+.mvv-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+/* cada card MVV */
+.mvv-card {
+  background: var(--branco);
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  width: 30%;
+  min-width: 260px;
+  text-align: center;
+  transition: all .3s ease;
+}
+
+.mvv-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.mvv-card h3 {
+  margin-bottom: var(--space-2);
+  color: var(--cor-neutra-900);
+}
+
+.mvv-card p {
+  font-size: var(--font-md);
+  line-height: 1.5;
+}
+
+/* ============================
+      BLOCO: História
+   ============================ */
+
+.historia {
+  padding: var(--space-3);
+}
+
+.historia h2 {
+  margin-bottom: var(--space-2);
+}
+
+.historia p {
+  margin-top: var(--space-1);
+  font-size: var(--font-md);
+  line-height: 1.7;
+}
+
+/* ============================
+      BLOCO: Equipe
+   ============================ */
+
+.equipe {
+  padding: var(--space-3);
+}
+
+.equipe h2 {
+  margin-bottom: var(--space-3);
+}
+
+.equipe-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.membro {
+  text-align: center;
+  padding: var(--space-3);
+  background: var(--branco);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  width: 260px;
+  transition: all .3s ease;
+}
+
+.membro:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.membro img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: var(--space-2);
+}
+
+.membro h3 {
+  margin-bottom: 4px;
+  font-size: var(--font-lg);
+}
+
+.membro p {
+  color: var(--cor-neutra-600);
+  font-weight: 600;
+}
+
+/* ============================
+      BLOCO: CTA Final
+   ============================ */
+
+.cta {
+  text-align: center;
+  padding: var(--space-4);
+}
+
+.cta h2 {
+  margin-bottom: var(--space-2);
+}
+
+.cta p {
+  margin-bottom: var(--space-3);
+  font-size: var(--font-md);
+}
+
+.cta .botao {
+  margin: var(--space-1);
+}
+
+/* ============================
+      RESPONSIVIDADE
+   ============================ */
+
+/* Tablets e menores */
+@media (max-width: 992px) {
+  .mvv-container {
+    justify-content: center;
+  }
+
+  .mvv-card {
+    width: 45%;
+  }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+  .mvv-card {
+    width: 100%;
+  }
+
+  .equipe-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .membro {
+    width: 90%;
+    max-width: 300px;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+  .institucional {
+    padding: var(--space-1);
+  }
+
+  .mvv-card p,
+  .historia p,
+  .membro p {
+    font-size: var(--font-sm);
+  }
+}

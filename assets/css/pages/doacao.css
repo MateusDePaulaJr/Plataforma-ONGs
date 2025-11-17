@@ -1,0 +1,30 @@
+/* =========================================
+   DOAÇÃO
+   ========================================= */
+
+.doacao {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.doacao h2 {
+  text-align: center;
+  margin-bottom: var(--space-3);
+}
+
+#doacao form {
+  width: 100%;
+}
+
+#msgDoacao {
+  text-align: center;
+  margin-top: var(--space-2);
+  font-weight: 600;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .doacao {
+    padding: var(--space-2);
+  }
+}
