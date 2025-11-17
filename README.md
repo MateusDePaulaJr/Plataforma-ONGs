@@ -1,41 +1,42 @@
-# 🌐 Plataforma de ONGs  
-> Conectando organizações sociais, voluntários e apoiadores.
-
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-
+# Plataforma de ONGs  
+Conectando organizações sociais, voluntários e apoiadores.
 
 ---
 
-## 🎯 Visão Geral  
-A **Plataforma de ONGs** é um sistema web front-end que permite o **cadastro, visualização e engajamento de ONGs**, oferecendo uma interface moderna, responsiva e interativa.  
-Desenvolvido como parte da disciplina **Desenvolvimento Front-End para Web**, o projeto aplica todos os conceitos estudados em HTML, CSS e JavaScript.
+## Visão Geral
+A **Plataforma de ONGs** é um site acadêmico em desenvolvimento que tem como objetivo permitir o **cadastro, listagem e engajamento de ONGs**, oferecendo uma interface moderna, responsiva e intuitiva.  
+
+Desenvolvido como parte da disciplina **Desenvolvimento Front-End para Web**, o projeto aplica conceitos fundamentais de **HTML5, CSS3 e JavaScript**, com foco em usabilidade, boas práticas e impacto social.
 
 ---
 
-## 💡 Funcionalidades Principais  
-- 📝 Cadastro de ONGs (nome, área, descrição, imagem e Instagram)  
-- 💾 Armazenamento local via `localStorage`  
-- 💻 Exibição dinâmica de ONGs em cards com layout responsivo  
-- 🔍 Modo “Ver mais”: abre uma visualização expandida com foto, descrição e redes sociais  
-- 🏢 Página institucional com missão, visão, valores e equipe  
-- 🎨 Tema moderno: **cinza escuro + verde piscina**
+## Funcionalidades Principais
+- **Cadastro de ONGs** com nome, área de atuação, descrição, meta de doações, imagem e Instagram  
+- **Armazenamento local** via `localStorage`  
+- **Listagem dinâmica** de ONGs em cards interativos com progresso de arrecadação  
+- **Sistema de doações simuladas** direcionadas à meta de cada ONG  
+- **Cadastro de voluntários** integrado ao painel administrativo  
+- **Painel administrativo** com totais de ONGs, doações e voluntários  
+- **Página institucional completa** com missão, visão, valores e equipe  
+- **Design moderno** (cinza escuro + verde piscina), inspirado em portais profissionais  
+- **Layout responsivo e interativo** (hover, transições e centralização dinâmica)
 
 ---
 
-## 🛠 Tecnologias Utilizadas  
+## Tecnologias Utilizadas
+
 | Categoria | Tecnologia |
 |------------|-------------|
 | Estrutura | HTML5 |
-| Estilo | CSS3 (grid, flexbox, variáveis e transições) |
+| Estilo | CSS3 (flexbox, grid, variáveis, transições) |
 | Interatividade | JavaScript (DOM, eventos, localStorage) |
 | Armazenamento | localStorage do navegador |
-| Design | Layout responsivo e mobile-first |
+| Design | Layout responsivo, mobile-first |
 
 ---
 
 ## 📁 Estrutura de Pastas
+
 ```
 PLATAFORMA-ONGS/
 │
@@ -48,44 +49,52 @@ PLATAFORMA-ONGS/
 ├── index.html
 ├── cadastro.html
 ├── ongs.html
+├── doacao.html
+├── voluntarios.html
 ├── institucional.html
+├── admin.html
 └── README.md
 ```
 
 ---
 
-## 🚀 Como Executar  
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/SEU_USUARIO/Plataforma-ONGs.git
-   ```
-2. Abra o arquivo `index.html` em um navegador moderno.  
-3. Navegue entre as páginas:
-   - 🏠 `index.html` → Página inicial  
-   - 📝 `cadastro.html` → Cadastro de ONGs  
-   - 📋 `ongs.html` → Listagem e detalhes  
-   - 🏢 `institucional.html` → Página institucional  
+##  Como Executar Localmente
 
-> 💡 O projeto roda 100% localmente — **não requer servidor.**
+1️⃣ **Clone o repositório:**
+```bash
+git clone https://github.com/MateusDePaulaJr/Plataforma-ONGs.git
+```
 
----
+2️⃣ **Acesse a pasta:**
+```bash
+cd Plataforma-ONGs
+```
 
-## 🧠 Conceitos Aplicados  
-- Estruturação semântica (`header`, `nav`, `main`, `section`, `footer`)  
-- CSS responsivo com **flexbox e grid layout**  
-- Manipulação de eventos e DOM com **JavaScript**  
-- Persistência local com **`localStorage`**  
-- Acessibilidade e contraste otimizados  
-- Boas práticas de UX/UI  
+3️⃣ **Abra o projeto no navegador:**
+```bash
+index.html
+```
+
+Ou, no VS Code, clique com o botão direito → **“Open with Live Server”**
 
 ---
 
-## 👤 Autor  
+## 🧠 Conceitos Aplicados
+- Estruturação semântica: `header`, `nav`, `main`, `section`, `footer`  
+- CSS responsivo com **flexbox** e **grid layout**  
+- Manipulação do **DOM** e **eventos** com JavaScript  
+- Persistência de dados com `localStorage`  
+- Padrões de acessibilidade e contraste visual  
+- Boas práticas de **UX/UI** e design limpo  
+
+---
+
+##  Autor
 **João Mateus de Paula Jr.**  
-Aluno de Análise e Desenvolvimento de Sistemas — 1º Período  
-📧 [mjunior650@gmail.com](mailto:mjunior650@gmail.com)  
-🌐 [GitHub — @MateusDePaulaJr](https://github.com/MateusDePaulaJr)
+Aluno de **Análise e Desenvolvimento de Sistemas – 1º Período**  
+📧 E-mail: [mjunior650@gmail.com](mailto:mjunior650@gmail.com)  
+💻 GitHub: [@MateusDePaulaJr](https://github.com/MateusDePaulaJr)
 
+---
 
-
-💚 *“Pequenas ações mudam o mundo. Cada linha de código também pode fazer diferença.”*
+Pequenas ações mudam o mundo. 
