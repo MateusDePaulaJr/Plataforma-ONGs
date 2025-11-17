@@ -1,90 +1,170 @@
-# Plataforma de ONGs 
+PLATAFORMA DE ONGs – ENTREGA 3
+=======================================
 
-Conectando organizações sociais, voluntários e apoiadores através de uma experiência web moderna, responsiva e acessível.
+Aluno: Mateus Júnior  
+Projeto: Plataforma de Cadastro e Apoio a ONGs  
+Entrega: Etapa 3 – SPA, Modularização e Templates JavaScript
 
---------------------------------------------------------------------
 
-## Sobre o Projeto
+📌 RESUMO DA ENTREGA 3
+---------------------------------------
+Nesta entrega, o sistema foi evoluído de um site tradicional multi-página para uma
+**SPA – Single Page Application**, utilizando JavaScript modular, templates dinâmicos,
+roteamento no front-end e manipulação de dados via localStorage.
 
-A Plataforma de ONGs é um sistema web desenvolvido para centralizar o cadastro, visualização e gestão de ONGs, possibilitando também o registro de doações e inscrições de voluntários.
+Todo o layout, estilos e identidade visual foram mantidos exatamente como na entrega 2.
+A evolução ocorreu exclusivamente na arquitetura JavaScript e no comportamento dinâmico.
 
-O projeto utiliza HTML5, CSS3 modularizado e JavaScript, com responsividade, design system, componentização e armazenamento via localStorage.
 
---------------------------------------------------------------------
+🎯 OBJETIVOS ATENDIDOS NA ENTREGA 3
+---------------------------------------
+✔ Transformar o sistema em uma SPA  
+✔ Criar sistema de navegação sem recarregar página (Router JS)  
+✔ Criar templates JavaScript para cada página  
+✔ Modularizar completamente o projeto  
+✔ Implementar manipulação de DOM via JS  
+✔ Validar dados de formulários  
+✔ Armazenar informações no localStorage de forma isolada  
+✔ Manter todos os HTMLs e CSS originais  
+✔ Criar código organizado, escalável e de fácil manutenção  
 
-## Principais Recursos
 
-• Cadastro completo de ONGs  
-• Listagem dinâmica em cards responsivos  
-• Página detalhada da ONG  
-• Doações simuladas  
-• Cadastro de voluntários  
-• Painel administrativo  
-• Página institucional  
-• Menu responsivo com dropdown  
-• Design System profissional  
-• CSS modular  
-• Feedbacks visuais (alerts, validações)
+🏗 ARQUITETURA DA APLICAÇÃO (FINAL)
+---------------------------------------
 
---------------------------------------------------------------------
+PLATAFORMA-ONGS/
+│
+├── index.html
+├── cadastro.html
+├── ongs.html
+├── detalhe.html
+├── doacao.html
+├── voluntarios.html
+├── institucional.html
+├── admin.html
+│
+├── assets/
+│   ├── css/
+│   │   ├── components/
+│   │   ├── core/
+│   │   ├── layout/
+│   │   ├── pages/
+│   │   └── style.css
+│   │
+│   ├── js/
+│   │   ├── app.js
+│   │   ├── router.js
+│   │   │
+│   │   ├── templates/
+│   │   │      home.js
+│   │   │      cadastro.js
+│   │   │      ongs.js
+│   │   │      detalhe.js
+│   │   │      doacao.js
+│   │   │      voluntarios.js
+│   │   │      admin.js
+│   │   │
+│   │   ├── storage/
+│   │   │      ongs.js
+│   │   │      doacoes.js
+│   │   │      voluntarios.js
+│   │   │
+│   │   └── validations/ (opcional)
+│   │
+│   └── img/ (opcional)
+│
+└── README.txt
 
-## Design System
 
-### Paleta de Cores  
-Primárias, secundárias, neutras e feedback (sucesso, aviso, erro, info).
+🧠 CONCEITOS IMPLEMENTADOS
+---------------------------------------
 
-### Tipografia  
-Escala: xs, sm, md, lg, xl.
+1. SPA – SINGLE PAGE APPLICATION  
+O sistema agora funciona sem recarregar páginas.  
+O router intercepta os cliques nos links e carrega a lógica JS da página correspondente.
 
-### Espaçamentos  
-Sistema baseado em 8px: 8–64px.
+2. ROUTER.JS  
+Gerencia a navegação interna:
+- Captura navegação nos menus
+- Atualiza a URL usando History API
+- Chama o template correspondente
 
-### Arquitetura CSS Modular  
-core/ → variáveis e base  
-layout/ → grid, navbar, containers  
-components/ → cards, botões, formulários, etc  
-pages/ → CSS por página
+3. TEMPLATES JAVASCRIPT  
+Cada página HTML tem um arquivo JS com seu comportamento:
+- Carregar dados do localStorage
+- Atualizar o DOM
+- Validar formulários
+- Criar listagens dinâmicas
 
---------------------------------------------------------------------
+4. MODULARIZAÇÃO  
+Todo o código foi separado em módulos:
+- app.js → inicialização da SPA
+- router.js → roteamento
+- templates/ → comportamento de cada página
+- storage/ → CRUD de localStorage
+- validations/ → validações futuras
 
-## Estrutura do Projeto
+5. LOCALSTORAGE COMO BANCO DE DADOS  
+O sistema salva:
+- ONGs cadastradas
+- Doações realizadas
+- Voluntários registrados
 
-assets/css/core  
-assets/css/layout  
-assets/css/components  
-assets/css/pages  
-assets/js/script.js  
-index.html  
-cadastro.html  
-ongs.html  
-doacao.html  
-voluntarios.html  
-institucional.html  
-admin.html  
-detalhe.html  
-README.md
+Cada entidade possui módulo próprio, garantindo organização.
 
---------------------------------------------------------------------
+6. COMPATIBILIDADE TOTAL COM O CSS  
+Nenhum arquivo de estilo foi modificado.
+A estrutura HTML permanece idêntica à entrega anterior.
 
-## Como Executar
 
-1. Clone o repositório:  
-git clone https://github.com/MateusDePaulaJr/Plataforma-ONGs.git
+📊 FUNCIONALIDADES DISPONÍVEIS
+---------------------------------------
 
-2. Acesse a pasta:  
-cd Plataforma-ONGs
+✔ Cadastrar ONGs  
+✔ Listar ONGs cadastradas  
+✔ Página de detalhes da ONG  
+✔ Registrar doações  
+✔ Exibir total de doações na Home e Admin  
+✔ Cadastrar voluntários  
+✔ Dashboard administrativo  
+✔ SPA completa sem reload  
+✔ Interface responsiva e organizada
 
-3. Execute abrindo index.html ou usando Live Server.
 
---------------------------------------------------------------------
+🧪 COMO TESTAR A APLICAÇÃO
+---------------------------------------
 
-## Autor
+1. Abra o index.html no navegador  
+2. Use o menu superior para navegar entre as páginas  
+3. Cadastre ONGs e veja elas aparecerem em:
+   - ONGs
+   - Detalhes
+   - Admin
+4. Faça uma doação e veja o total atualizar
+5. Cadastre voluntários pelo formulário
+6. Navegue sem recarregar a página (SPA ativa)
 
-João Mateus de Paula Jr.  
-ADS – 1º Período  
-E-mail: mjunior650@gmail.com  
-GitHub: @MateusDePaulaJr
 
---------------------------------------------------------------------
+📦 DEPENDÊNCIAS
+---------------------------------------
+Este projeto não usa frameworks externos.
+Tudo foi feito em:
+- HTML5
+- CSS3
+- JavaScript ES Modules (import/export)
+- localStorage
 
-"Pequenas ações mudam o mundo."
+
+📘 CONCLUSÃO DA ENTREGA 3
+---------------------------------------
+A aplicação foi totalmente evoluída para um sistema mais profissional,
+estável e escalável, mantendo todo o estilo visual original.
+
+A arquitetura modular garante:
+- melhor manutenção
+- melhor organização
+- reutilização de código
+- separação de responsabilidades
+
+
+
