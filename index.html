@@ -9,21 +9,27 @@
 </head>
 <body>
 
+  <!-- Botão Acessibilidade: Pular para o conteúdo -->
+  <a href="#conteudo" class="skip">Pular para o conteúdo</a>
+
   <header>
   <h1>Plataforma de ONGs</h1>
 
+  <!-- Chavinha tema claro/escuro -->
+  <label class="switch">
+    <input type="checkbox" id="toggleTema">
+    <span class="slider"></span>
+  </label>
+
   <!-- Botão do menu mobile -->
   <div class="nav-toggle">☰</div>
-
+  
   <!-- Links do menu -->
   <nav class="nav-links">
-
     <a href="index.html">Início</a>
 
     <div class="nav-item">
       <a href="ongs.html" class="nav-dropdown-toggle">ONGs</a>
-
-      <!-- Submenu -->
       <div class="nav-submenu">
         <a href="ongs.html">Ver ONGs</a>
         <a href="cadastro.html">Cadastrar ONG</a>
@@ -32,12 +38,12 @@
 
     <a href="institucional.html">Institucional</a>
     <a href="voluntarios.html">Voluntariado</a>
-
   </nav>
 </header>
 
 
-  <main class="home">
+  <!-- Conteúdo principal com ID para acessibilidade -->
+  <main id="conteudo" class="home">
     <section class="apresentacao card">
       <h2>Conectamos ONGs, doadores e voluntários</h2>
       <p>
@@ -82,6 +88,18 @@
   <footer>
     <p>© 2025 - Plataforma de ONGs | Desenvolvido para fins acadêmicos por João Mateus A. P. Jr</p>
   </footer>
+
   <script type="module" src="assets/js/app.js"></script>
+  <script>
+  const toggle = document.getElementById("toggleTema");
+
+  toggle.addEventListener("change", () => {
+    document.documentElement.setAttribute(
+      "data-theme",
+      toggle.checked ? "dark" : "light"
+    );
+  });
+</script>
+
 </body>
 </html>

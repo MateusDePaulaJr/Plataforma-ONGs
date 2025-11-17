@@ -25,3 +25,77 @@
 @import url("pages/doacao.css");
 @import url("pages/voluntarios.css");
 @import url("pages/detalhe.css");
+.skip {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip:focus {
+  position: static;
+  background: #000;
+  color: #fff;
+  padding: 5px;
+}
+/* ---------- TEMA CLARO / ESCURO ---------- */
+
+:root {
+  --bg: #ffffff;
+  --texto: #000000;
+}
+
+:root[data-theme="dark"] {
+  --bg: #1a1a1a;
+  --texto: #eaeaea;
+}
+
+body {
+  background: var(--bg);
+  color: var(--texto);
+}
+
+/* ---------- CHAVINHA (TOGGLE SWITCH) ---------- */
+
+.switch {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #000;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
