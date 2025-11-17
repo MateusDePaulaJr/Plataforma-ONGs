@@ -25,3 +25,14 @@
 @import url("pages/doacao.css");
 @import url("pages/voluntarios.css");
 @import url("pages/detalhe.css");
+.skip {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip:focus {
+  position: static;
+  background: #000;
+  color: #fff;
+  padding: 5px;
+}
