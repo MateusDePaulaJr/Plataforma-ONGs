@@ -13,31 +13,33 @@
   <a href="#conteudo" class="skip">Pular para o conteúdo</a>
 
   <header>
-    <h1>Plataforma de ONGs</h1>
+  <h1>Plataforma de ONGs</h1>
 
-    <!-- Botão do menu mobile -->
-    <div class="nav-toggle">☰</div>
+  <!-- Chavinha tema claro/escuro -->
+  <label class="switch">
+    <input type="checkbox" id="toggleTema">
+    <span class="slider"></span>
+  </label>
 
-    <!-- Links do menu -->
-    <nav class="nav-links">
+  <!-- Botão do menu mobile -->
+  <div class="nav-toggle">☰</div>
+  
+  <!-- Links do menu -->
+  <nav class="nav-links">
+    <a href="index.html">Início</a>
 
-      <a href="index.html">Início</a>
-
-      <div class="nav-item">
-        <a href="ongs.html" class="nav-dropdown-toggle">ONGs</a>
-
-        <!-- Submenu -->
-        <div class="nav-submenu">
-          <a href="ongs.html">Ver ONGs</a>
-          <a href="cadastro.html">Cadastrar ONG</a>
-        </div>
+    <div class="nav-item">
+      <a href="ongs.html" class="nav-dropdown-toggle">ONGs</a>
+      <div class="nav-submenu">
+        <a href="ongs.html">Ver ONGs</a>
+        <a href="cadastro.html">Cadastrar ONG</a>
       </div>
+    </div>
 
-      <a href="institucional.html">Institucional</a>
-      <a href="voluntarios.html">Voluntariado</a>
-
-    </nav>
-  </header>
+    <a href="institucional.html">Institucional</a>
+    <a href="voluntarios.html">Voluntariado</a>
+  </nav>
+</header>
 
 
   <!-- Conteúdo principal com ID para acessibilidade -->
@@ -88,5 +90,16 @@
   </footer>
 
   <script type="module" src="assets/js/app.js"></script>
+  <script>
+  const toggle = document.getElementById("toggleTema");
+
+  toggle.addEventListener("change", () => {
+    document.documentElement.setAttribute(
+      "data-theme",
+      toggle.checked ? "dark" : "light"
+    );
+  });
+</script>
+
 </body>
 </html>
