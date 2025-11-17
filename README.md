@@ -31,49 +31,74 @@ A evolução ocorreu exclusivamente na arquitetura JavaScript e no comportamento
 
 🏗 ARQUITETURA DA APLICAÇÃO (FINAL)
 ---------------------------------------
+PLATAFORMA-ONGS
 
-PLATAFORMA-ONGS/
-│
-├── index.html
-├── cadastro.html
-├── ongs.html
-├── detalhe.html
-├── doacao.html
-├── voluntarios.html
-├── institucional.html
-├── admin.html
-│
-├── assets/
-│   ├── css/
-│   │   ├── components/
-│   │   ├── core/
-│   │   ├── layout/
-│   │   ├── pages/
-│   │   └── style.css
-│   │
-│   ├── js/
-│   │   ├── app.js
-│   │   ├── router.js
-│   │   │
-│   │   ├── templates/
-│   │   │      home.js
-│   │   │      cadastro.js
-│   │   │      ongs.js
-│   │   │      detalhe.js
-│   │   │      doacao.js
-│   │   │      voluntarios.js
-│   │   │      admin.js
-│   │   │
-│   │   ├── storage/
-│   │   │      ongs.js
-│   │   │      doacoes.js
-│   │   │      voluntarios.js
-│   │   │
-│   │   └── validations/ (opcional)
-│   │
-│   └── img/ (opcional)
-│
-└── README.txt
+Arquivos HTML:
+- index.html
+- cadastro.html
+- ongs.html
+- detalhe.html
+- doacao.html
+- voluntarios.html
+- institucional.html
+- admin.html
+
+Pasta assets/css/components:
+- badges.css
+- buttons.css
+- cards.css
+- feedback.css
+- forms.css
+
+Pasta assets/css/core:
+- base.css
+- variables.css
+
+Pasta assets/css/layout:
+- grid.css
+- layout.css
+- navbar.css
+
+Pasta assets/css/pages:
+- admin.css
+- cadastro.css
+- detalhe.css
+- doacao.css
+- home.css
+- institucional.css
+- ongs.css
+- voluntarios.css
+
+Arquivo de estilo geral:
+- style.css
+
+Pasta assets/js:
+- app.js
+- router.js
+
+Pasta assets/js/templates:
+- home.js
+- cadastro.js
+- ongs.js
+- detalhe.js
+- doacao.js
+- voluntarios.js
+- admin.js
+
+Pasta assets/js/storage:
+- ongs.js
+- doacoes.js
+- voluntarios.js
+
+Pasta assets/js/validations (opcional):
+- cadastroValidation.js
+- doacaoValidation.js
+- voluntarioValidation.js
+
+Outros:
+
+- README.md
+
 
 
 🧠 CONCEITOS IMPLEMENTADOS
