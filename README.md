@@ -1,77 +1,90 @@
-# Plataforma de ONGs  
-Conectando organizações sociais, voluntários e apoiadores.
+# Plataforma de ONGs 
 
-## Visão Geral
-A Plataforma de ONGs é um site acadêmico desenvolvido para permitir o cadastro, listagem e engajamento de ONGs, oferecendo uma interface moderna, responsiva e intuitiva.
+Conectando organizações sociais, voluntários e apoiadores através de uma experiência web moderna, responsiva e acessível.
 
-O projeto evoluiu significativamente para a Entrega II, aplicando CSS3 avançado, design system, responsividade profissional e organização modular de arquivos.
+--------------------------------------------------------------------
 
-## Funcionalidades Principais
-- Cadastro de ONGs
-- Listagem dinâmica em cards
-- Página de detalhes
-- Doações simuladas
-- Cadastro de voluntários
-- Painel administrativo
-- Página institucional completa
-- Menu responsivo com dropdown + mobile
-- Design System profissional
-- Arquitetura CSS modular
-- Feedbacks visuais
+## Sobre o Projeto
+
+A Plataforma de ONGs é um sistema web desenvolvido para centralizar o cadastro, visualização e gestão de ONGs, possibilitando também o registro de doações e inscrições de voluntários.
+
+O projeto utiliza HTML5, CSS3 modularizado e JavaScript, com responsividade, design system, componentização e armazenamento via localStorage.
+
+--------------------------------------------------------------------
+
+## Principais Recursos
+
+• Cadastro completo de ONGs  
+• Listagem dinâmica em cards responsivos  
+• Página detalhada da ONG  
+• Doações simuladas  
+• Cadastro de voluntários  
+• Painel administrativo  
+• Página institucional  
+• Menu responsivo com dropdown  
+• Design System profissional  
+• CSS modular  
+• Feedbacks visuais (alerts, validações)
+
+--------------------------------------------------------------------
 
 ## Design System
-- Paleta com 8+ cores
-- Tipografia escalonada (xs–xl)
-- Espaçamento modular (8px)
-- Grid de 12 colunas
-- 5 breakpoints
-- Componentização completa
+
+### Paleta de Cores  
+Primárias, secundárias, neutras e feedback (sucesso, aviso, erro, info).
+
+### Tipografia  
+Escala: xs, sm, md, lg, xl.
+
+### Espaçamentos  
+Sistema baseado em 8px: 8–64px.
+
+### Arquitetura CSS Modular  
+core/ → variáveis e base  
+layout/ → grid, navbar, containers  
+components/ → cards, botões, formulários, etc  
+pages/ → CSS por página
+
+--------------------------------------------------------------------
 
 ## Estrutura do Projeto
-PLATAFORMA-ONGS/
-│
-├── assets/
-│ ├── css/
-│ │ ├── core/
-│ │ │ ├── variables.css
-│ │ │ └── base.css
-│ │ ├── layout/
-│ │ │ ├── grid.css
-│ │ │ ├── navbar.css
-│ │ │ └── layout.css
-│ │ ├── components/
-│ │ │ ├── cards.css
-│ │ │ ├── buttons.css
-│ │ │ ├── forms.css
-│ │ │ ├── badges.css
-│ │ │ └── feedback.css
-│ │ └── pages/
-│ │ ├── home.css
-│ │ ├── cadastro.css
-│ │ ├── ongs.css
-│ │ ├── doacao.css
-│ │ ├── voluntarios.css
-│ │ ├── institucional.css
-│ │ ├── admin.css
-│ │ └── detalhe.css
-│ │
-│ └── js/
-│ └── script.js
-│
-├── index.html
-├── cadastro.html
-├── ongs.html
-├── doacao.html
-├── voluntarios.html
-├── institucional.html
-├── admin.html
-├── detalhe.html
-└── README.md
 
-## Execução
-1. git clone https://github.com/MateusDePaulaJr/Plataforma-ONGs 
-2. Abrir index.html  
-3. Ou usar Live Server
+assets/css/core  
+assets/css/layout  
+assets/css/components  
+assets/css/pages  
+assets/js/script.js  
+index.html  
+cadastro.html  
+ongs.html  
+doacao.html  
+voluntarios.html  
+institucional.html  
+admin.html  
+detalhe.html  
+README.md
+
+--------------------------------------------------------------------
+
+## Como Executar
+
+1. Clone o repositório:  
+git clone https://github.com/MateusDePaulaJr/Plataforma-ONGs.git
+
+2. Acesse a pasta:  
+cd Plataforma-ONGs
+
+3. Execute abrindo index.html ou usando Live Server.
+
+--------------------------------------------------------------------
 
 ## Autor
-João Mateus de Paula Jr.
+
+João Mateus de Paula Jr.  
+ADS – 1º Período  
+E-mail: mjunior650@gmail.com  
+GitHub: @MateusDePaulaJr
+
+--------------------------------------------------------------------
+
+"Pequenas ações mudam o mundo."
