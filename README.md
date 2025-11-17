@@ -3,33 +3,8 @@ PLATAFORMA DE ONGs – ENTREGA 3
 
 Aluno: Mateus Júnior  
 Projeto: Plataforma de Cadastro e Apoio a ONGs  
-Entrega: Etapa 3 – SPA, Modularização e Templates JavaScript
 
-
-📌 RESUMO DA ENTREGA 3
----------------------------------------
-Nesta entrega, o sistema foi evoluído de um site tradicional multi-página para uma
-**SPA – Single Page Application**, utilizando JavaScript modular, templates dinâmicos,
-roteamento no front-end e manipulação de dados via localStorage.
-
-Todo o layout, estilos e identidade visual foram mantidos exatamente como na entrega 2.
-A evolução ocorreu exclusivamente na arquitetura JavaScript e no comportamento dinâmico.
-
-
-🎯 OBJETIVOS ATENDIDOS NA ENTREGA 3
----------------------------------------
-✔ Transformar o sistema em uma SPA  
-✔ Criar sistema de navegação sem recarregar página (Router JS)  
-✔ Criar templates JavaScript para cada página  
-✔ Modularizar completamente o projeto  
-✔ Implementar manipulação de DOM via JS  
-✔ Validar dados de formulários  
-✔ Armazenar informações no localStorage de forma isolada  
-✔ Manter todos os HTMLs e CSS originais  
-✔ Criar código organizado, escalável e de fácil manutenção  
-
-
-🏗 ARQUITETURA DA APLICAÇÃO (FINAL)
+🏗 ARQUITETURA DA APLICAÇÃO 
 ---------------------------------------
 PLATAFORMA-ONGS
 
@@ -180,7 +155,7 @@ Tudo foi feito em:
 - localStorage
 
 
-📘 CONCLUSÃO DA ENTREGA 3
+📘 CONCLUSÃO DA ENTREGA 
 ---------------------------------------
 A aplicação foi totalmente evoluída para um sistema mais profissional,
 estável e escalável, mantendo todo o estilo visual original.
