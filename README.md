@@ -65,7 +65,7 @@ Pasta assets/js/storage:
 - doacoes.js
 - voluntarios.js
 
-Pasta assets/js/validations (opcional):
+Pasta assets/js/validations:
 - cadastroValidation.js
 - doacaoValidation.js
 - voluntarioValidation.js
